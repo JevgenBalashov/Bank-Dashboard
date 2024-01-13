@@ -1,0 +1,64 @@
+.Menu {
+    box-sizing: border-box;
+    background-color: #fff;
+    width: 250px;
+    height: 100vh;
+    border-right: #E6EFF5;
+    
+    .MenuHeaderContainer {
+        padding: 35px 28px 33px 38px;
+        .LogoContainer {
+            display: flex;
+            gap: 9px;
+            align-items: center;
+            .logoSvg {
+                display: block;
+            }
+        }
+    }
+    .MenuBodyContainer {
+        .MenuList {
+            display: flex;
+            flex-direction: column;
+            padding: 0px;
+            .MenuItem {
+                position: relative;
+                height: 60px;
+                box-sizing: border-box;
+                border-left: 6px solid #FFF;
+                display: flex;
+                align-items: center;
+                span {
+                    color: #B1B1B1;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+                .MenuSvg {
+                    margin-right: 26px;
+                    margin-left: 32px;
+                }
+            }
+            .MenuItem::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: -6px;
+                width: 6px;
+                background-color: #FFF;
+                border-radius: 0px 10px 10px 0px;
+                transition: all 0.3s ease;
+            }
+            .MenuItem:hover::before {
+                background-color: rgba(45, 96, 255, 1);
+            }
+            .MenuItem:hover * {
+                fill: rgba(45, 96, 255, 1);
+                color: rgba(45, 96, 255, 1);
+                transition: all 0.3s ease;
+            }
+        }
+    }
+}
