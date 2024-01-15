@@ -1,3 +1,71 @@
 .Layout {
+    flex-grow: 1;
+    background-color: #F5F7FA;
+    .LayoutHeader {
+        background: #FFF;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        padding: 0px 40px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #E6EFF5;
+        .HeaderTitle h1 {
+            color: #343C6A;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+        .HeaderMainElement {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            gap: 30px;
+            form {
+                position: relative;
+                &::before {
+                    content: url(../../assets/Svg/LayoutSvg/SearchSvg.svg);
+                    position: absolute;
+                    top: 30%;
+                    left: 25px;
+                }
+                input {
+                    background: #F5F7FA;
+                    border: none;
+                    padding: 16px 10px 16px 60px;
+                    border-radius: 40px;
+                    &::placeholder {
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        color: #8BA3CB;
+                    }
+                    &:focus {
+                        border: none;
+                        outline: none;
+                    }
+                }
 
+            }
+            .HeaderSvg {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: #F5F7FA;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .HeaderAccountImage {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: #5f9fff;
+            }
+        }
+        
+        
+    }
 }
