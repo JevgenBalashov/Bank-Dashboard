@@ -1,6 +1,39 @@
-.box {
-    background-color: #fffb00;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
+.PageContainer {
+    box-sizing: border-box;
+    width: 100%;
+    max-height: 1100px;
+    padding: 25px 40px 40px 40px;
+    .DashboardContainer {
+        .CardSection {
+            max-width: 730px;
+            .CardHeader {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                span {
+                    color: #343C6A;
+                    font-family: Inter;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    transition: all 0.3s ease;
+                }
+                span:last-child {
+                    font-size: 17px;
+                }
+                span:last-child:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                    opacity: 0.5;
+                    transition: all 0.3s ease;
+                }
+            }
+            .CardContainer {
+                margin-top: 20px;
+                display: flex;
+                gap: 30px;
+            }
+        }
+    }
 }
