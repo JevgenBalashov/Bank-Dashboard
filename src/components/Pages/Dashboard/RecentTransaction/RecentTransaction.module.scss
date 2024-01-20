@@ -1,0 +1,51 @@
+.RecentTransactionContainer {
+    max-width: 350px;
+    .title {
+        color: #343C6A;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
+    .TransactionList {
+        padding: 25px 25px 30px 25px;
+        background: #fff;
+        border-radius: 25px;
+        ul {
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+                height: 55px;
+                .svgBox {
+                    display: flex;
+                    align-items: center;
+                    gap: 17px;
+                    .TransactionInfo {
+                        h3 {
+                            color: #232323;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            margin-bottom: 7px;
+                        }
+                        span {
+                            color: #718EBF;
+                            font-size: 15px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
+            li:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+}

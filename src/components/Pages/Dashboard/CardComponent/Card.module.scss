@@ -1,10 +1,10 @@
 .CardContainer {
     .CardBody {
         width: 350px;
-        // height: 235px;
         border-radius: 25px;
         background: linear-gradient(107deg, #4C49ED 2.61%, #0A06F4 101.2%);
         padding-top: 25px;
+        box-sizing: border-box;
         .BalanceChip {
             display: flex;
             align-items: center;
@@ -14,7 +14,7 @@
             .Balance {
                 display: flex;
                 flex-direction: column;
-                span {
+                div {
                     color: #FFF;
                     font-family: Lato;
                     font-size: 12px;
@@ -22,7 +22,7 @@
                     font-weight: 400;
                     line-height: normal;
                 }
-                span:last-child {
+                div:last-child {
                     font-size: 20px;
                 }
             }
@@ -38,7 +38,7 @@
                 display: flex;
                 gap: 3px;
                 flex-direction: column;
-                span {
+                div {
                     color: rgba(255, 255, 255, 0.70);
                     font-family: Lato;
                     font-size: 12px;
@@ -46,7 +46,7 @@
                     font-weight: 400;
                     line-height: normal;
                 }
-                span:last-child {
+                div:last-child {
                     font-size: 15px;
                     font-weight: 600;
                     color: #FFF;
