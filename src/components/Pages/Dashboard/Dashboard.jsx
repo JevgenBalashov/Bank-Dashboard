@@ -1,6 +1,7 @@
 import styles from "./Dashboard.module.scss";
 import CardComponent from "./CardComponent/Card";
 import RecentTransaction from "./RecentTransaction/RecentTransaction";
+import WeeklyActivity from "./WeeklyActivity/WeeklyActivity";
 
 function Dashboard() {
     return (
@@ -31,6 +32,9 @@ function Dashboard() {
                 </div>
                 <div className={styles.RecentTransactionSection}>
                     <RecentTransaction />
+                </div>
+                <div className={styles.WeeklyActivity}>
+                    <WeeklyActivity />
                 </div>
             </div>
         </section>

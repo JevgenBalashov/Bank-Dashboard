@@ -10,7 +10,6 @@
         column-gap: 25px;
         row-gap: 25px;
         .CardSection {
-            max-width: 730px;
             .CardHeader {
                 display: flex;
                 align-items: center;
@@ -37,7 +36,7 @@
             .CardContainer {
                 margin-top: 20px;
                 display: flex;
-                gap: 30px;
+                justify-content: space-between;
             }
         }
     }
