@@ -48,9 +48,12 @@ function WeeklyActivity() {
                 },
             },
         },
-        legend: {
-            position: 'right',
+        plugins: {
+            legend: {
+                display: false,
+            },
         },
+
     };
 
     const barStyles = {
@@ -59,12 +62,16 @@ function WeeklyActivity() {
         borderRadius: 2,
     };
 
+    const chartContainerStyles = {
+        height: '300px',
+    };
+
     return (
         <div className={styles.WeeklyActivityContainer}>
             <h1 className={styles.title}>
                 Weekly Activity
             </h1>
-            <div className={styles.WeeklyActivityDiagram}>
+            <div className={styles.WeeklyActivityDiagram} style={chartContainerStyles}>
                 <animated.div className={styles.animation} style={props}>
                     <Bar
                         data={{

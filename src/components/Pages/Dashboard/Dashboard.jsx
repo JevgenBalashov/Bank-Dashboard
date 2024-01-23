@@ -2,6 +2,7 @@ import styles from "./Dashboard.module.scss";
 import CardComponent from "./CardComponent/Card";
 import RecentTransaction from "./RecentTransaction/RecentTransaction";
 import WeeklyActivity from "./WeeklyActivity/WeeklyActivity";
+import ExpenseStatistics from "./ExpenseStatistics/ExpenseStatistics";
 
 function Dashboard() {
     return (
@@ -35,6 +36,9 @@ function Dashboard() {
                 </div>
                 <div className={styles.WeeklyActivity}>
                     <WeeklyActivity />
+                </div>
+                <div className={styles.ExpenseStatistics}>
+                    <ExpenseStatistics />
                 </div>
             </div>
         </section>
