@@ -47,9 +47,12 @@ function WeeklyActivity() {
                 },
             },
         },
-        legend: {
-            position: 'right',
+        plugins: {
+            legend: {
+                display: false,
+            },
         },
+
     };
 
     const barStyles = {
@@ -58,12 +61,21 @@ function WeeklyActivity() {
         borderRadius: 2,
     };
 
+    const chartContainerStyles = {
+        height: '300px',
+    };
+
     return (
         <div className={styles.WeeklyActivityContainer}>
             <h1 className={styles.title}>
                 Weekly Activity
             </h1>
+<<<<<<< HEAD
             <div className={styles.WeeklyActivityDiagram}>
+=======
+            <div className={styles.WeeklyActivityDiagram} style={chartContainerStyles}>
+                <animated.div className={styles.animation} style={props}>
+>>>>>>> 927abdbdb8fb63abdf28abdb35160bf03c9d96d6
                     <Bar
                         data={{
                             labels: activityPerWeek.map(day => day.day),
