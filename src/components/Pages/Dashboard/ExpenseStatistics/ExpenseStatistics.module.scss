@@ -1,17 +1,14 @@
-.WeeklyActivityContainer {
+.ExpenseStatisticsContainer {
     .title {
         color: #343C6A;
         font-size: 22px;
         font-style: normal;
         font-weight: 600;
-        line-height: normal;
         margin-bottom: 20px;
     }
-    .WeeklyActivityDiagram {
-        width: 90%;
-        height: 85%;
-        padding: 20px 35px;
-        background: #fff;
+    .ExpenseStatisticsPieDiagram {
+        background-color: #fff;
         border-radius: 25px;
+        padding: 40px;
     }
 }

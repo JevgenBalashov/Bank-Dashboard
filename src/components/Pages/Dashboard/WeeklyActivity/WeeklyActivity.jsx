@@ -1,5 +1,5 @@
 import React from "react";
-import { useSpring, animated } from "react-spring";
+import { useSpring } from "react-spring";
 import styles from "./WeeklyActivity.module.scss";
 import { Bar } from "react-chartjs-2";
 import {
@@ -30,7 +30,6 @@ const activityPerWeek = [
 ];
 
 function WeeklyActivity() {
-    const props = useSpring({ from: { height: '0%' }, to: { height: '100%' } });
 
     const chartOptions = {
         scales: {
@@ -55,7 +54,7 @@ function WeeklyActivity() {
 
     const barStyles = {
         barPercentage: 0.8, 
-        categoryPercentage: 0.6, 
+        categoryPercentage: 0.5, 
         borderRadius: 2,
     };
 
@@ -65,7 +64,6 @@ function WeeklyActivity() {
                 Weekly Activity
             </h1>
             <div className={styles.WeeklyActivityDiagram}>
-                <animated.div className={styles.animation} style={props}>
                     <Bar
                         data={{
                             labels: activityPerWeek.map(day => day.day),
@@ -86,7 +84,6 @@ function WeeklyActivity() {
                         }}
                         options={chartOptions}
                     />
-                </animated.div>
             </div>
         </div>
     );
